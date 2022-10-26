@@ -1,0 +1,17 @@
+################################################################################
+#
+# Docker compose overrides
+#
+# @see https://docs.sourcegraph.com/admin/deploy/docker-compose
+# @see https://docs.sourcegraph.com/admin/deploy/docker-compose/configuration
+#
+################################################################################
+
+---
+# file: docker-compose-cockroach.override.yml
+
+version: "3.5"
+services:
+  temporal-ui:
+    ports:
+      - 6080:8080
